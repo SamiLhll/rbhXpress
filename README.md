@@ -4,12 +4,6 @@
 
 shell script to compute mutual best hits of fasta proteomes using diamond blastp :
 
-# external dependencies :
-
-The script uses diamond :   
-Buchfink, B., Reuter, K., & Drost, H. (2021). Sensitive protein alignments at tree-of-life scale using DIAMOND (Version 2.0.11) [Computer software]. https://doi.org/10.1038/s41592-021-01101-x
-
-The v2.0.15 is provided along with the script
 
 # usage : 
 
@@ -23,14 +17,18 @@ To it run for example on B.floridae vs Mizuhopecten yessoensis using 6 threads y
 
 ```{bash}
 
-bash mbhXpress.sh -a DATA/GCF_000003815.2_Bfl_VNyyK_protein.faa -b DATA/GCF_002113885.1_ASM211388v2_protein.faa -o Bflo_Myes -t 6
+bash mbhXpress.sh \
+-a DATA/GCF_000003815.2_Bfl_VNyyK_protein.faa \
+-b DATA/GCF_002113885.1_ASM211388v2_protein.faa \
+-o Bflo_Myes \
+-t 6
 
 ```
 It will give you an output like :   
 
----------------------------------------------   
+#---------------------------------------------   
 mbhXpress v1.0.0   
----------------------------------------------   
+#---------------------------------------------   
  - creating databases   
  - creating databases : DONE   
  - run the blast : a vs b   
@@ -39,10 +37,17 @@ mbhXpress v1.0.0
  - compute significant hits   
  - select the mutual best hits   
  - cleaning temporary files   
----------------------------------------------   
+#---------------------------------------------   
 Done : found 8616 mutual best hits.   
 Output written in Bflo_Myes.tab   
----------------------------------------------   
+#---------------------------------------------   
+
+# external dependencies :
+
+The script uses diamond (v2.0.15 is provided along with the script) :   
+
+Buchfink, B., Reuter, K., & Drost, H. (2021). Sensitive protein alignments at tree-of-life scale using DIAMOND (Version 2.0.11) [Computer software]. https://doi.org/10.1038/s41592-021-01101-x
+
 
 # runtime :
 
