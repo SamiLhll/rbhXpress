@@ -19,15 +19,17 @@ mbhXpress v1.0.0 - usage :
 -o OUTPUT_NAME   
 -t THREADS   
 
-To it run for example on B.floridae vs Mizuhopecten yessoensis using 6 threads you can run the following output. You'll know that it worked if your getting the complete following output :
+To it run for example on B.floridae vs Mizuhopecten yessoensis using 6 threads you can run the following output.
 
 ```{bash}
 
 bash mbhXpress.sh -a DATA/GCF_000003815.2_Bfl_VNyyK_protein.faa -b DATA/GCF_002113885.1_ASM211388v2_protein.faa -o Bflo_Myes -t 6
 
 ```
+It will give you an output like :   
+
 ---------------------------------------------   
-             mbhXpress v1.0.0   
+mbhXpress v1.0.0   
 ---------------------------------------------   
  - creating databases   
  - creating databases : DONE   
@@ -38,8 +40,8 @@ bash mbhXpress.sh -a DATA/GCF_000003815.2_Bfl_VNyyK_protein.faa -b DATA/GCF_0021
  - select the mutual best hits   
  - cleaning temporary files   
 ---------------------------------------------   
-   Done : found 8616 mutual best hits.   
-   Output written in Bflo_Myes.tab   
+Done : found 8616 mutual best hits.   
+Output written in Bflo_Myes.tab   
 ---------------------------------------------   
 
 # runtime :
