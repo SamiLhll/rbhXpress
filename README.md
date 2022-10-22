@@ -26,10 +26,11 @@ bash mbhXpress.sh \
 ```
 It will give you an output like :   
 
-#---------------------------------------------   
+\---------------------------------------------   
 mbhXpress v1.0.0   
-#---------------------------------------------   
- - creating databases   
+\---------------------------------------------   
+
+- creating databases   
  - creating databases : DONE   
  - run the blast : a vs b   
  - run the blast : b vs a   
@@ -37,10 +38,11 @@ mbhXpress v1.0.0
  - compute significant hits   
  - select the mutual best hits   
  - cleaning temporary files   
-#---------------------------------------------   
+
+\---------------------------------------------   
 Done : found 8616 mutual best hits.   
 Output written in Bflo_Myes.tab   
-#---------------------------------------------   
+\---------------------------------------------   
 
 # external dependencies :
 
