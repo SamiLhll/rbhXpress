@@ -41,7 +41,7 @@ mbhXpress v1.0.0
 
 \---------------------------------------------   
 Done : found 8616 mutual best hits.   
-Output written in Bflo_Myes.tab   
+Output written in Bflo_Myes  
 \---------------------------------------------   
 
 # external dependencies :
