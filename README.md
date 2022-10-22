@@ -4,8 +4,32 @@
 
 shell script to compute mutual best hits of fasta proteomes using diamond blastp :
 
+### install :
 
-# usage : 
+Download the tool with :
+
+```{bash}
+
+wget https://github.com/SamiLhll/mbhXpress/releases/download/v1.0.0/mbhXpress.linux.tar.gz
+
+```
+Uncompress with :
+
+```{bash}
+
+tar -xzf mbhXpress.linux.tar.gz
+
+```
+
+You're ready to go. Give this a try :
+
+```{bash}
+
+bash mbhXpress/mbh_express.sh -h
+
+```
+
+### usage : 
 
 mbhXpress v1.0.0 - usage :   
 -a PROTEOME1   
@@ -44,14 +68,14 @@ Done : found 8616 mutual best hits.
 Output written in Bflo_Myes  
 \---------------------------------------------   
 
-# external dependencies :
+### external dependencies :
 
 The script uses diamond (v2.0.15 is provided along with the script) :   
 
 Buchfink, B., Reuter, K., & Drost, H. (2021). Sensitive protein alignments at tree-of-life scale using DIAMOND (Version 2.0.11) [Computer software]. https://doi.org/10.1038/s41592-021-01101-x
 
 
-# runtime :
+### runtime :
 
 Using 6 threads for two protein datasets of ~40k sequences each, I get the results in 1m12,433s
 
