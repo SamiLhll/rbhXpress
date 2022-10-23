@@ -1,9 +1,9 @@
  
 <img src="https://github.com/SamiLhll/mbhXpress/blob/d6f560933a94f1caafbb4c70a15d23d74746173f/inst/img/mbhXpress_cover.png" alt="mbhXpress" width="400"/>
-
-Speedy computing of mutual best hits between two proteomes   
-
+ 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+A shell script for speedy computing of mutual best hits between two proteomes.  
 
 ## Install :
 
@@ -29,10 +29,10 @@ chmod +x mbhXpress/mbh_express.sh
 
 The tool consist of a shell script and a distribution of diamond blast.   
 Run the bashscript in a terminal with the following mandatory arguments :   
--a PROTEOME1  fasta format
--b PROTEOME2   fasta format
--o OUTPUT_NAME  path to the file to write the mutual best hits
--t THREADS  number specifying the amount of threads dedicated to the job
+-a PROTEOME1 (fasta format)   
+-b PROTEOME2 (fasta format)   
+-o OUTPUT_NAME (path to the file to write the mutual best hits)   
+-t THREADS (number specifying the amount of threads dedicated to the job)   
 
 ## Example : 
 
@@ -69,7 +69,8 @@ Output written in Bflo_Myes
 
 ## External dependencies :
 
-The script uses diamond v2.0.15([Buchfink, B., Reuter, K., & Drost, H. (2021)](https://doi.org/10.1038/s41592-021-01101-x)) which is distributed within the release of this tool. No need for the users to do anything about it.
+The script uses diamond v2.0.15([Buchfink, B., Reuter, K., & Drost, H. (2021)](https://doi.org/10.1038/s41592-021-01101-x)) which is distributed within the release of this tool.   
+No need for the users to do anything about it.
 
 
 ### Runtime :
