@@ -22,6 +22,12 @@ bash mbhXpress/mbh_express.sh -h
 # if not make it executable with :
 chmod +x mbhXpress/mbh_express.sh
 
+### OPTIONAL :
+# you can an add alias to your ~/.bashrc so you can run the script by simply typing mbhXpress in the terminal.   
+# to do it type the following command, replacing <path_to_mbhXpress.sh> by the actual path of this file on your machine :
+echo "alias mbhXpress=\"./<path_to_mbhXpress.sh>\"" | tee -a ~/.bashrc
+# and finally :
+source ~/.bashrc
 
 ```
 
