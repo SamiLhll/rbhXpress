@@ -1,12 +1,11 @@
  
-<img src="https://github.com/SamiLhll/mbhXpress/blob/d6f560933a94f1caafbb4c70a15d23d74746173f/inst/img/mbhXpress_cover.png" alt="mbhXpress" width="400"/>
+<img src="https://github.com/SamiLhll/mbhXpress/blob/d6f560933a94f1caafbb4c70a15d23d74746173f/inst/img/mbhXpress_cover.png" alt="mbhXpress" width="500"/>
  
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-A shell script for speedy computing of mutual best hits between two proteomes.  
+A shell script that rapidly computes the mutual best hits between two proteomes.  
 
 ## Install :
-
 
 ```{bash}
 
@@ -15,6 +14,9 @@ wget https://github.com/SamiLhll/mbhXpress/releases/download/v1.0.0/mbhXpress.li
 
 # uncompress :
 tar -xzf mbhXpress.linux.tar.gz
+
+# On MacOSX you'll need to install your own version of diamond blast. you can do it using Homebrew as following :
+brew install diamond
 
 # test you can execute the script with :
 bash mbhXpress/mbh_express.sh -h
@@ -42,14 +44,14 @@ Run the bashscript in a terminal with the following mandatory arguments :
 
 ## Example : 
 
-If I want to run the tool on B.floridae () vs M.yessoensis () using 6 threads I would do :
+To run the tool on B.floridae ([Simakov et al.2020](https://doi.org/10.1038/s41559-020-1156-z)) vs M.yessoensis ([Wang et al. 2017](https://doi.org/10.1038/s41559-017-0120)) using 6 threads type in your terminal :
 
 ```{bash}
 
 bash mbhXpress.sh \
 -a GCF_000003815.2_Bfl_VNyyK_protein.faa \
 -b GCF_002113885.1_ASM211388v2_protein.faa \
--o Bflo_Myes \
+-o Bflo_Myes.txt \
 -t 6
 
 ```
@@ -70,7 +72,7 @@ mbhXpress v1.0.0
 
 \---------------------------------------------   
 Done : found 8616 mutual best hits.   
-Output written in Bflo_Myes  
+Output written in Bflo_Myes.txt  
 \---------------------------------------------   
 
 ## External dependencies :
