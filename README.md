@@ -10,12 +10,14 @@ A shell script that rapidly computes the mutual best hits between two proteomes.
 ```{bash}
 
 # download :
-wget https://github.com/SamiLhll/mbhXpress/releases/download/v1.0.0/mbhXpress.linux_mac.tar.gz
+wget https://github.com/SamiLhll/mbhXpress/releases/download/v1.1.0/mbhXpress.linux_mac.tar.gz
 
 # uncompress :
 tar -xzf mbhXpress.linux.tar.gz
 
-# On MacOSX you'll need to install your own version of diamond blast. you can do it using Homebrew as following :
+# On MacOSX you'll need to install your own version of diamond blast.   
+You can do it using Homebrew as following :
+
 brew install diamond
 
 # test you can execute the script with :
@@ -25,8 +27,9 @@ bash mbhXpress/mbh_express.sh -h
 chmod +x mbhXpress/mbh_express.sh
 
 ### OPTIONAL :
-# you can an add alias to your ~/.bashrc so you can run the script by simply typing mbhXpress in the terminal.   
-# to do it type the following command, replacing <path_to_mbhXpress.sh> by the actual path of this file on your machine :
+# you can an add alias to your ~/.bashrc so you can run the script by typing mbhXpress in the terminal.   
+# to do it type the following command, replacing <path_to_mbhXpress.sh> 
+# by the actual path of this file on your machine :
 echo "alias mbhXpress=\"./<path_to_mbhXpress.sh>\"" | tee -a ~/.bashrc
 # and finally :
 source ~/.bashrc
@@ -37,6 +40,7 @@ source ~/.bashrc
 
 The tool consist of a shell script and a distribution of diamond blast.   
 Run the bashscript in a terminal with the following mandatory arguments :   
+
 -a PROTEOME1 (fasta format)   
 -b PROTEOME2 (fasta format)   
 -o OUTPUT_NAME (path to the file to write the mutual best hits)   
@@ -44,7 +48,7 @@ Run the bashscript in a terminal with the following mandatory arguments :
 
 ## Example : 
 
-To run the tool on B.floridae ([Simakov et al.2020](https://doi.org/10.1038/s41559-020-1156-z)) vs M.yessoensis ([Wang et al. 2017](https://doi.org/10.1038/s41559-017-0120)) using 6 threads type in your terminal :
+To run the tool and compare the proteomes downloaded from NCBI for the lancelet B.floridae ([Simakov et al.2020](https://doi.org/10.1038/s41559-020-1156-z)) against the scallop M.yessoensis ([Wang et al. 2017](https://doi.org/10.1038/s41559-017-0120)) using 6 threads, type in your terminal :
 
 ```{bash}
 
@@ -58,7 +62,7 @@ bash mbhXpress.sh \
 It will give you an output like :   
 
 \---------------------------------------------   
-mbhXpress v1.0.0   
+mbhXpress v1.1.0   
 \---------------------------------------------   
 
 - creating databases   
@@ -77,8 +81,9 @@ Output written in Bflo_Myes.txt
 
 ## External dependencies :
 
-The script uses diamond v2.0.15([Buchfink, B., Reuter, K., & Drost, H. (2021)](https://doi.org/10.1038/s41592-021-01101-x)) which is distributed within the release of this tool.   
-No need for the users to do anything about it.
+The script uses diamond v2.0.15([Buchfink, B., Reuter, K., & Drost, H. (2021)](https://doi.org/10.1038/s41592-021-01101-x)).   
+A linux version is distributed within the release of this tool.   
+Linux users don't have todo anything about it, while macOSX users have to install it using Homebrew.
 
 
 ### Runtime :
