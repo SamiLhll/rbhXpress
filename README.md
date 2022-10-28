@@ -20,12 +20,6 @@ You can do it using Homebrew as following :
 
 brew install diamond
 
-# test you can execute the script with :
-bash mbhXpress/mbh_express.sh -h
-
-# if not make it executable with :
-chmod +x mbhXpress/mbh_express.sh
-
 ### OPTIONAL :
 # you can an add alias to your ~/.bashrc so you can run the script by typing mbhXpress in the terminal.   
 # to do it type the following command, replacing <path_to_mbhXpress.sh> 
