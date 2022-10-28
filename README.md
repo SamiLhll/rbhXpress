@@ -1,11 +1,11 @@
  
-<img src="https://github.com/SamiLhll/mbhXpress/blob/d6f560933a94f1caafbb4c70a15d23d74746173f/inst/img/mbhXpress_cover.png" alt="mbhXpress" width="500"/>
+<img src="https://github.com/SamiLhll/mbhXpress/blob/d6f560933a94f1caafbb4c70a15d23d74746173f/inst/img/mbhXpress_cover.png" alt="mbhXpress" width="400"/>
  
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
 A shell script that rapidly computes the mutual best hits between two proteomes.  
 
-## Install :
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+# Installation :
 
 ```{bash}
 
@@ -30,7 +30,7 @@ source ~/.bashrc
 
 ```
 
-## Usage : 
+# Usage : 
 
 The tool consist of a shell script and a distribution of diamond blast.   
 Run the bashscript in a terminal with the following mandatory arguments :   
@@ -40,7 +40,7 @@ Run the bashscript in a terminal with the following mandatory arguments :
 -o OUTPUT_NAME (path to the file to write the mutual best hits)   
 -t THREADS (number specifying the amount of threads dedicated to the job)   
 
-## Example : 
+# Example : 
 
 To run the tool and compare the proteomes downloaded from NCBI for the lancelet B.floridae ([Simakov et al.2020](https://doi.org/10.1038/s41559-020-1156-z)) against the scallop M.yessoensis ([Wang et al. 2017](https://doi.org/10.1038/s41559-017-0120)) using 6 threads, type in your terminal :
 
@@ -53,34 +53,34 @@ bash mbhXpress.sh \
 -t 6
 
 ```
-It will give you an output like :   
+It gives the following output :   
 
-\---------------------------------------------   
-mbhXpress v1.1.0   
-\---------------------------------------------   
+```{bash}
+---------------------------------------------
+             mbhXpress v1.2.0
+---------------------------------------------
+ - creating databases
+ - creating databases : DONE
+ - run the blast : a vs b
+ - run the blast : b vs a
+ - run the blast : DONE
+ - select the mutual best hits
+ - cleaning temporary files
+---------------------------------------------
+   Done : found 8616 mutual best hits.
+   Output written in Bflo_Myes
+   Log written in LOG.Bflo_Myes
+---------------------------------------------
+```
 
-- creating databases   
- - creating databases : DONE   
- - run the blast : a vs b   
- - run the blast : b vs a   
- - run the blast : DONE   
- - compute significant hits   
- - select the mutual best hits   
- - cleaning temporary files   
-
-\---------------------------------------------   
-Done : found 8616 mutual best hits.   
-Output written in Bflo_Myes.txt  
-\---------------------------------------------   
-
-## External dependencies :
+# External dependencies :
 
 The script uses diamond v2.0.15([Buchfink, B., Reuter, K., & Drost, H. (2021)](https://doi.org/10.1038/s41592-021-01101-x)).   
 A linux version is distributed within the release of this tool.   
 Linux users don't have todo anything about it, while macOSX users have to install it using Homebrew.
 
 
-### Runtime :
+# Runtime :
 
 In the example above, using 6 threads for the two protein datasets of ~40k sequences each, it took 1m12,433s for the script to complete.
 
