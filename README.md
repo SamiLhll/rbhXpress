@@ -10,14 +10,13 @@ A shell script that rapidly computes the mutual best hits between two proteomes.
 ```{bash}
 
 # download :
-wget https://github.com/SamiLhll/mbhXpress/releases/download/v1.1.0/mbhXpress.linux_mac.tar.gz
+wget https://github.com/SamiLhll/mbhXpress/releases/download/v1.2.0/mbhXpress.tar.gz
 
 # uncompress :
-tar -xzf mbhXpress.linux.tar.gz
+tar -xzf mbhXpress.tar.gz
 
 # On MacOSX you'll need to install your own version of diamond blast.   
-You can do it using Homebrew as following :
-
+# You can do it using Homebrew as following :
 brew install diamond
 
 ### OPTIONAL :
