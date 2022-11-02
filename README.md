@@ -1,6 +1,6 @@
  
-<img src="https://github.com/SamiLhll/mbhXpress/blob/d6f560933a94f1caafbb4c70a15d23d74746173f/inst/img/mbhXpress_cover.png" alt="mbhXpress" width="400"/>
- 
+ # mbhXpress <a><img src='https://github.com/SamiLhll/mbhXpress/blob/d6f560933a94f1caafbb4c70a15d23d74746173f/inst/img/mbhXpress_cover.png' align="right" height="138.5" /></a>
+  
 A shell script that rapidly computes the mutual best hits between two proteomes.  
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -74,7 +74,7 @@ It gives the following output :
 
 # External dependencies :
 
-The script uses diamond v2.0.15([Buchfink, B., Reuter, K., & Drost, H. (2021)](https://doi.org/10.1038/s41592-021-01101-x)).   
+The script uses diamond v2.0.15 ([Buchfink, B., Reuter, K., & Drost, H. (2021)](https://doi.org/10.1038/s41592-021-01101-x)).   
 A linux version is distributed within the release of this tool.   
 Linux users don't have todo anything about it, while macOSX users have to install it using Homebrew.
 
