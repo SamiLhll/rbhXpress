@@ -7,27 +7,26 @@ A shell script that rapidly computes the mutual best hits between two proteomes.
 
 # Installation :
 
+download :
 ```{bash}
-
-# download :
 wget https://github.com/SamiLhll/mbhXpress/releases/download/v1.2.0/mbhXpress.tar.gz
-
-# uncompress :
-tar -xzf mbhXpress.tar.gz
-
-# On MacOSX you'll need to install your own version of diamond blast.   
-# You can do it using Homebrew as following :
-brew install diamond
-
-### OPTIONAL :
-# you can an add alias to your ~/.bashrc so you can run the script by typing mbhXpress in the terminal.   
-# to do it type the following command, replacing <path_to_mbhXpress.sh> 
-# by the actual path of this file on your machine :
-echo "alias mbhXpress=\"./<path_to_mbhXpress.sh>\"" | tee -a ~/.bashrc
-# and finally :
-source ~/.bashrc
-
 ```
+uncompress :
+```{bash}
+tar -xzf mbhXpress.tar.gz
+```
+On MacOSX you'll need to install your own version of diamond blast.   
+You can do it using Homebrew as following :
+```{bash}
+brew install diamond
+```
+(OPTIONAL) you can an add alias to your ~/.bashrc so you can run the script by typing mbhXpress in the terminal.   
+to do it type the following command, replacing *<path_to_mbhXpress.sh>* by the actual path of this file on your machine :
+```{bash}
+echo "alias mbhXpress=\"./<path_to_mbhXpress.sh>\"" | tee -a ~/.bashrc
+source ~/.bashrc
+```
+
 
 # Usage : 
 
