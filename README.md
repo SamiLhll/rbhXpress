@@ -9,7 +9,7 @@ A shell script that rapidly computes the mutual best hits between two proteomes.
 
 download :
 ```{bash}
-wget https://github.com/SamiLhll/mbhXpress/releases/download/v1.2.0/mbhXpress.tar.gz
+wget https://github.com/SamiLhll/mbhXpress/releases/download/v1.2.1/mbhXpress.tar.gz
 ```
 uncompress :
 ```{bash}
@@ -55,7 +55,7 @@ It gives the following output :
 
 ```{bash}
 ---------------------------------------------
-             mbhXpress v1.2.0
+             mbhXpress v1.2.1
 ---------------------------------------------
  - creating databases
  - creating databases : DONE
