@@ -66,8 +66,8 @@ It gives the following output :
  - cleaning temporary files
 ---------------------------------------------
    Done : found 8616 mutual best hits.
-   Output written in Bflo_Myes
-   Log written in LOG.Bflo_Myes
+   Output written in Bflo_Myes.txt
+   Log written in Bflo_Myes.txt.log
 ---------------------------------------------
 ```
 
