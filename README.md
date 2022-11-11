@@ -33,8 +33,8 @@ source ~/.bashrc
 The tool consist of a shell script and a distribution of diamond blast.   
 Run the bashscript in a terminal with the following mandatory arguments :   
 
--a PROTEOME1 (fasta format)   
--b PROTEOME2 (fasta format)   
+-a PROTEOME1 (fasta format, also works with simlinks)   
+-b PROTEOME2 (fasta format, also works with simlinks)   
 -o OUTPUT_NAME (path to the file to write the mutual best hits)   
 -t THREADS (number specifying the amount of threads dedicated to the job)   
 
