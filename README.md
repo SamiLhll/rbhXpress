@@ -4,6 +4,7 @@
 A shell script that rapidly computes the mutual best hits between two proteomes.  
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![DOI](https://zenodo.org/badge/555896555.svg)](https://zenodo.org/badge/latestdoi/555896555)
 
 # Installation :
 
