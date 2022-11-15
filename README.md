@@ -9,7 +9,7 @@ A shell script that uses diamond to compute the reciprocal best hits between two
 
 * download :
 ```{bash}
-wget https://github.com/SamiLhll/rbhXpress/releases/download/v1.2.2/rbhXpress.tar.gz
+wget https://github.com/SamiLhll/rbhXpress/releases/download/v1.2.3/rbhXpress.tar.gz
 ```
 * uncompress :
 ```{bash}
@@ -59,7 +59,7 @@ It gives the following output :
 
 ```{bash}
 ---------------------------------------------
-             rbhXpress v1.2.2
+             rbhXpress v1.2.3
 ---------------------------------------------
  - creating databases
  - creating databases : DONE
