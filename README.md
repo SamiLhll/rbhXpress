@@ -1,37 +1,39 @@
  
- # mbhXpress
+ # rbhXpress
   
-A shell script that uses diamond to compute the mutual best hits between two proteomes.  
+A shell script that uses diamond to compute the reciprocal best hits between two proteomes.  
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![DOI](https://zenodo.org/badge/555896555.svg)](https://zenodo.org/badge/latestdoi/555896555)
 
 # Installation :
 
-download :
+* download :
 ```{bash}
-wget https://github.com/SamiLhll/mbhXpress/releases/download/v1.2.1/mbhXpress.tar.gz
+wget https://github.com/SamiLhll/rbhXpress/releases/download/v1.2.2/rbhXpress.tar.gz
 ```
-uncompress :
+* uncompress :
 ```{bash}
-tar -xzf mbhXpress.tar.gz
+tar -xzf rbhXpress.tar.gz
 ```
-On MacOSX you'll need to install your own version of diamond blast.   
+On MacOS you'll need to install your own version of diamond blast.   
 You can do it using Homebrew as following :
+
 ```{bash}
 brew install diamond
 ```
-(OPTIONAL) you can an add alias to your ~/.bashrc so you can run the script by typing mbhXpress in the terminal.   
-to do it type the following command, replacing *<path_to_mbhXpress.sh>* by the actual path of this file on your machine :
+
+(OPTIONAL) you can an add alias to your ~/.bashrc so you can run the script by typing rbhXpress in the terminal.   
+to do it type the following command, replacing *<path_to_rbhXpress.sh>* by the actual path of this file on your machine :
+
 ```{bash}
-echo "alias mbhXpress=\"./<path_to_mbhXpress.sh>\"" | tee -a ~/.bashrc
+echo "alias rbhXpress=\"./<path_to_rbhXpress.sh>\"" | tee -a ~/.bashrc
 source ~/.bashrc
 ```
 
 
 # Usage : 
 
-The tool consist of a shell script and a distribution of diamond blast.   
+The tool consist of a shell script and a binary of diamond blast.   
 Run the bashscript in a terminal with the following mandatory arguments :   
 
 -a PROTEOME1 (fasta format, also works with simlinks)   
@@ -45,7 +47,7 @@ To run the tool and compare the proteomes downloaded from NCBI for the lancelet 
 
 ```{bash}
 
-bash mbhXpress.sh \
+bash rbhXpress.sh \
 -a GCF_000003815.2_Bfl_VNyyK_protein.faa \
 -b Pec_ragoo_v1.0.pep.fasta \
 -o Bflo_Pech.txt \
@@ -57,17 +59,17 @@ It gives the following output :
 
 ```{bash}
 ---------------------------------------------
-             mbhXpress v1.2.1
+             rbhXpress v1.2.1
 ---------------------------------------------
  - creating databases
  - creating databases : DONE
  - run the blast : a vs b
  - run the blast : b vs a
  - run the blast : DONE
- - select the mutual best hits
+ - select the reciprocal best hits
  - cleaning temporary files
 ---------------------------------------------
-   Done : found 6833 mutual best hits.
+   Done : found 6833 reciprocal best hits.
    Output written in Bflo_Pech.txt
    Log written in Bflo_Pech.txt.log
 ---------------------------------------------
@@ -96,8 +98,8 @@ XP_035657407.1	PE_Scaf289_1.3
 # External dependencies :
 
 The script uses diamond v2.0.15 ([Buchfink, B., Reuter, K., & Drost, H. (2021)](https://doi.org/10.1038/s41592-021-01101-x)).   
-A linux version is distributed within the release of this tool.   
-Linux users don't have todo anything about it, while macOSX users have to install it using Homebrew.
+A binary for linux is attached within the releases of this tool.   
+Linux users don't have todo anything about it, while macOS users have to install it using Homebrew.
 
 
 # Runtime :
