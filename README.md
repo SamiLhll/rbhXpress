@@ -59,7 +59,7 @@ It gives the following output :
 
 ```{bash}
 ---------------------------------------------
-             rbhXpress v1.2.1
+             rbhXpress v1.2.2
 ---------------------------------------------
  - creating databases
  - creating databases : DONE
