@@ -67,16 +67,16 @@ echo "---------------------------------------------" | tee -a $OUTPUT_NAME.log
 
 # create the blast databases :
 echo " - creating databases" | tee -a $OUTPUT_NAME.log
-$diamond_path makedb --in $PROTEOME1 -d "$run_id.p1" &> $OUTPUT_NAME.log
-$diamond_path makedb --in $PROTEOME2 -d "$run_id.p2" &> $OUTPUT_NAME.log
+$diamond_path makedb --in $PROTEOME1 -d "$run_id.p1" --ignore-warnings &> $OUTPUT_NAME.log
+$diamond_path makedb --in $PROTEOME2 -d "$run_id.p2" --ignore-warnings &> $OUTPUT_NAME.log
 
 echo " - creating databases : DONE" | tee -a $OUTPUT_NAME.log
 
 # Run the blast :
 echo " - run the blast : a vs b" | tee -a $OUTPUT_NAME.log
-$diamond_path blastp -q $PROTEOME2 -d "$run_id.p1" -o "$run_id.p2_p1" -k 1 -e 1E-10 --threads $THREADS &> $OUTPUT_NAME.log
+$diamond_path blastp -q $PROTEOME2 -d "$run_id.p1" -o "$run_id.p2_p1" -k 1 -e 1E-10 --threads $THREADS --ignore-warnings &> $OUTPUT_NAME.log
 echo " - run the blast : b vs a" | tee -a $OUTPUT_NAME.log
-$diamond_path blastp -q $PROTEOME1 -d "$run_id.p2" -o "$run_id.p1_p2" -k 1 -e 1E-10 --threads $THREADS &> $OUTPUT_NAME.log
+$diamond_path blastp -q $PROTEOME1 -d "$run_id.p2" -o "$run_id.p1_p2" -k 1 -e 1E-10 --threads $THREADS --ignore-warnings &> $OUTPUT_NAME.log
 
 echo " - run the blast : DONE" | tee -a $OUTPUT_NAME.log
 
