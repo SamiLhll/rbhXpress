@@ -1,7 +1,7 @@
  
- # mbhXpress <a><img src='https://github.com/SamiLhll/mbhXpress/blob/d6f560933a94f1caafbb4c70a15d23d74746173f/inst/img/mbhXpress_cover.png' align="right" height="138.5" /></a>
+ # mbhXpress
   
-A shell script that rapidly computes the mutual best hits between two proteomes.  
+A shell script that uses diamond to compute the mutual best hits between two proteomes.  
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![DOI](https://zenodo.org/badge/555896555.svg)](https://zenodo.org/badge/latestdoi/555896555)
