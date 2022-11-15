@@ -1,7 +1,7 @@
  
  # rbhXpress
   
-A shell script that uses diamond to compute the reciprocal best hits between two proteomes.  
+A shell script that uses diamond to compute the reciprocal best hits between two proteomes in a rush.  
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
