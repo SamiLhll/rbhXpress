@@ -43,14 +43,14 @@ Run the bashscript in a terminal with the following mandatory arguments :
 
 # Example : 
 
-To run the tool and compare the proteomes downloaded from NCBI for the lancelet Branchiostoma floridae ([Simakov et al.2020](https://doi.org/10.1038/s41559-020-1156-z)) against the deep-sea tube worm Paraescarpia echinospica ([Sun et al. 2021](https://doi.org/10.1093/molbev/msab203)) using 6 threads, type in your terminal :
+To run the tool and compare the proteomes downloaded from Ensembl for Homo sapiens ([GRCh38](https://ftp.ensembl.org/pub/release-108/fasta/homo_sapiens/pep/)) vs Mus musculus ([GRCm39](https://ftp.ensembl.org/pub/release-108/fasta/mus_musculus/pep/)) using 6 threads, type in your terminal :
 
 ```{bash}
 
 bash rbhXpress.sh \
--a GCF_000003815.2_Bfl_VNyyK_protein.faa \
--b Pec_ragoo_v1.0.pep.fasta \
--o Bflo_Pech.txt \
+-a Homo_sapiens.GRCh38.pep.all.fa \
+-b Mus_musculus.GRCm39.pep.all.fa \
+-o Hsap_Mmus.tab \
 -t 6
 
 ```
@@ -69,29 +69,29 @@ It gives the following output :
  - select the reciprocal best hits
  - cleaning temporary files
 ---------------------------------------------
-   Done : found 6833 reciprocal best hits.
-   Output written in Bflo_Pech.txt
-   Log written in Bflo_Pech.txt.log
+   Done : found 24355 reciprocal best hits.
+   Output written in Hsap_Mmus.tab
+   Log written in Hsap_Mmus.tab.log
 ---------------------------------------------
 ```
 
-The resulting tab separated table written in Bflo_Pech.txt reports one line per orthologous pair with sequence names of file **a** in first column, and sequence names of file **b** in the second column :
+The resulting tab separated table written in Hsap_Mmus.tab reports one line per orthologous pair with sequence names of file **a** in first column, and sequence names of file **b** in the second column :
 
 ```{bash}
-head Bflo_Pech.txt
+head Hsap_Mmus.tab
 ```
 
 ```{bash}
-NP_007761.1	PE_Scaf9739_0.3
-NP_007765.1	PE_Scaf9739_0.0
-XP_035657338.1	PE_Scaf5545_2.9
-XP_035657343.1	PE_Scaf1142_1.4
-XP_035657346.1	PE_Scaf6666_2.9
-XP_035657360.1	PE_Scaf2739_0.6
-XP_035657364.1	PE_Scaf7376_3.8
-XP_035657370.1	PE_Scaf326_2.2
-XP_035657384.1	PE_Scaf12405_1.2
-XP_035657407.1	PE_Scaf289_1.3
+ENSP00000000233.5	ENSMUSP00000020717.6
+ENSP00000000412.3	ENSMUSP00000007602.9
+ENSP00000001008.4	ENSMUSP00000032508.5
+ENSP00000001146.2	ENSMUSP00000145092.2
+ENSP00000002125.4	ENSMUSP00000024887.5
+ENSP00000002165.5	ENSMUSP00000055519.6
+ENSP00000002501.6	ENSMUSP00000135524.3
+ENSP00000002596.5	ENSMUSP00000113919.2
+ENSP00000002829.3	ENSMUSP00000141865.2
+ENSP00000003084.6	ENSMUSP00000049228.6
 ```
 
 
@@ -104,5 +104,5 @@ Linux users don't have todo anything about it, while macOS users have to install
 
 # Runtime :
 
-In the example above, using 6 threads for the two protein datasets of ~40k sequences each, it took 1m12,433s for the script to complete.
+In the example above, using 6 threads for the two protein datasets of 120k and 67k sequences, it took 1m18s for the script to complete.
 
